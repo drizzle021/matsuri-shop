@@ -1,6 +1,13 @@
 * {
     box-sizing: content-box;
 }
+body { 
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
 
 nav{
     font-size: larger;
@@ -108,11 +115,14 @@ footer img{
     filter: invert();
 }
 
+.home{
+  margin-top: 80px
+}
 
 .home .section-title{
     font-size: 52px;
     font-weight: bold;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
     margin-top: 10vh;
 
 }
@@ -131,7 +141,6 @@ footer img{
 .product{
     width: fit-content;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     color: white;
@@ -206,7 +215,7 @@ footer img{
   .product-menu{
     position: absolute;
     height: 100%;
-    width: inherit;
+    width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: #FFF;
@@ -230,14 +239,16 @@ footer img{
   }
 
   .product-menu .detail{
-    width:40%;
+    width:30%;
+    padding: 5px;
     font-size: 20px;
     position: absolute;
     bottom: 20px;
-    left: 30px;
+    left: 40px;
     background-color: #1E1E1E;
     border:none;
     color:#FFF;
+    text-align: center;
   }
   .product-menu .to-cart{
     width:40%;
@@ -282,13 +293,152 @@ footer img{
   }
   .wrapper {
     width: 350px;
-    max-height: 6em;
+    max-height: 9em;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
   }
+
+  .category{
+    width: fit-content;
+    cursor: pointer;
+    margin: 60px 5px 60px 5px;
+
+  }
+  .category-image{
+    background-color:#FFF ;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+  }
+  .category-image img{
+    max-width: 100%;
+    max-height: auto;
+  }
+  .category-name{
+    width:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .category-name:hover{
+    cursor: default;
+    user-select: none;
+  }
+
+  .product-detail{
+    margin-top: 5vh;
+  }
+
+  .preview-side-bar{
+    width:100%;
+
+  }
+  
+  .small-product-preview img:not(.active){
+    opacity: 20%;
+  }
+
+  .product-detail .small-product-preview{
+    display: flex;
+    justify-content: space-around;
+    width: inherit;
+    height: 250px;
+  }
+  .product-detail .small-product-preview img{
+    max-width: 100%;
+    max-height: auto;
+    margin-top: 5px;
+  }
+  .product-detail .large-product-preview{
+    width: 500px;
+    height: 750px;
+  }
+  .product-detail .large-product-preview img{
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .product-detail .product-title{
+    font-family: "Merriweather", serif;
+    font-size: 50px;
+    color: #1E1E1E;
+  }
+  .product-detail .product-author{
+    font-family: "Inter", sans-serif;
+    font-size: x-large;
+    color: #757575;
+
+  }
+
+  .product-detail .product-desc{
+    width:80%;
+    background-color: #E6E6E6;
+    margin-top: 10vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: large;
+
+  }
+
+  .product-detail .product-parameters{
+    display: flex;
+    align-items: center;
+    width:100%;
+    background-color: #E6E6E6;
+    margin-top: 5vh;
+    margin-right: 3vw;
+    margin-left: 5vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-family: "Inter", sans-serif;
+    font-size: large;
+  }
+  
+  .product-detail .image{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      height:200px;
+  }
+  .product-detail .image img{
+    position:relative;
+    top:120px;
+    max-width:100%;
+    max-height:430px;
+    clip-path: rect(0% 0% 200px 100%);
+  }
+
+  .product-detail .product-recommendation{
+    display:flex;
+    width:100%;
+    margin-top: 4vh;
+    height: fit-content;
+    justify-content:center;
+    align-items: center;
+  }
+  .product-recommendation .product{
+    z-index: 1;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .product-recommendation .product-image{
+    width: 250px;
+    height: 400px;
+  }
+ 
+
 
 
   
