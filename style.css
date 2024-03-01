@@ -1,9 +1,14 @@
 * {
     box-sizing: content-box;
 }
-body { 
-  overflow-x: hidden;
+body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
+
 a{
   text-decoration: none;
   color:inherit;
@@ -437,11 +442,131 @@ footer img{
     width: 250px;
     height: 400px;
   }
- 
 
 
 
-  
+.register{
+    flex: 1;
+    /*margin-bottom: 0px;*/
+}
+
+.create-account{
+    width: 50%;
+    height: 60%;
+    background-color: #323232;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 20px;
+}
+
+.create-account-text{
+    color: #FFFFFF;
+    font-family: "Merriweather", serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.credentials{
+    font-size: 15px;
+    text-align: left;
+    font-family: "Merriweather", serif;
+    color: #9C9C9C;
+
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.have-account{
+    font-size: 15px;
+    text-align: left;
+    font-family: "Merriweather", serif;
+    color: #9C9C9C;
+    display: inline;
+    margin-right: 20px;
+}
+
+.create-account-button{
+    background-color: #8C69EF;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px 40px;
+    font-family: "Merriweather", serif;
+
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 10px;
+}
+
+.login-switch{
+    display: inline;
+    color: #8C69EF;
+    text-decoration: underline;
+    font-family: "Merriweather", serif;
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%) grayscale(50%);
+
+}
+
+.create-account-img{
+    width: 30%;
+    height: 30%;
+    margin-left: 400px;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+
+
+
+
+.fade-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.fade-container::before,
+.fade-container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%; /* Adjust the height of the fade as needed */
+    pointer-events: none; /* Ensure that the pseudo-elements don't interfere with mouse events */
+}
+
+.fade-container::before {
+
+    background: linear-gradient(to bottom, transparent, white); /* Adjust colors if needed */
+}
+
+.fade-container::after {
+
+    background: linear-gradient(to top, transparent, white); /* Adjust colors if needed */
+}
+
+
+
+
+
+
+
+
+
+
+
 /* small landscape phone */
 @media (max-width: 767.98px) {
     .hero-text span{
