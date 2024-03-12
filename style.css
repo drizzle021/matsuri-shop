@@ -42,7 +42,7 @@ nav a:not(a:has(img)):hover {
 }
 
 .small-logo{
-    width:100px;
+    width: 100px;
     height: auto;
 }
 
@@ -450,16 +450,34 @@ footer img{
     /*margin-bottom: 0px;*/
 }
 
-.create-account{
-    width: 50%;
-    height: 60%;
-    background-color: #323232;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/*.create-account{*/
+/*    width: 80%;*/
+/*    height: 60%;*/
+/*    background-color: #323232;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
 
+/*    border-radius: 20px;*/
+
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
+
+
+.create-account {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 80%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 20px;
+    background-color: #323232;
+    padding: 20px; /* Add padding for better spacing */
+    z-index: 1;
 }
 
 .create-account-text{
@@ -470,6 +488,14 @@ footer img{
     margin-top: 20px;
 }
 
+.create-account .row{
+    margin-top: 20px;
+}
+
+.create-account .col-md-6{
+    padding: 0 15px;
+}
+
 .credentials{
     font-size: 15px;
     text-align: left;
@@ -477,7 +503,7 @@ footer img{
     color: #9C9C9C;
 
     position: absolute;
-    top: 60%;
+    top: 30%;
     left: 35%;
     transform: translate(-50%, -50%);
 }
@@ -499,12 +525,16 @@ footer img{
     padding: 10px 40px;
     font-family: "Merriweather", serif;
 
-    position: absolute;
-    top: 80%;
-    left: 50%;
+    position: relative;
+    top: 90%;
+    left: 80%;
     transform: translate(-50%, -50%);
     border: none;
     border-radius: 10px;
+}
+
+.create-account .text-center{
+    margin-top: 30%;
 }
 
 .login-switch{
@@ -522,14 +552,18 @@ footer img{
 }
 
 .create-account-img{
-    width: 30%;
-    height: 30%;
-    margin-left: 400px;
-    margin-top: -20px;
+    width: 80%;
+    max-width: 80%;
+    height: auto;
     border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
 }
 
-
+.form-label{
+    color: #9C9C9C;
+}
 
 
 .fade-container {
@@ -537,27 +571,33 @@ footer img{
     overflow: hidden;
 }
 
-.fade-container::before,
-.fade-container::after {
+.fade-container::before{
     content: "";
     position: absolute;
     left: 0;
-    right: 0;
-    height: 100%; /* Adjust the height of the fade as needed */
-    pointer-events: none; /* Ensure that the pseudo-elements don't interfere with mouse events */
+    top: 0;
+    height: 100%;
+    z-index: 0;
+    background-image: url('img/collage_wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%) grayscale(50%);
+
+    pointer-events: none;
 }
 
 .fade-container::before {
-
-    background: linear-gradient(to bottom, transparent, white); /* Adjust colors if needed */
+    background: linear-gradient(to bottom, transparent, white);
 }
 
 .fade-container::after {
-
-    background: linear-gradient(to top, transparent, white); /* Adjust colors if needed */
+    background: linear-gradient(to top, transparent, white);
 }
 
-
+.col-md-5.form-container {
+    margin-bottom: auto;
+    margin-left: auto;
+}
 
 
 
