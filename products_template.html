@@ -19,16 +19,16 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-white bg-white">
             <div class="container">
-                <a class="navbar-brand d-none d-md-block" href="#">
+                <a class="navbar-brand d-none d-lg-block" href="index.html">
                     <img src="img/logoAsset 1@4x.png" alt="Logo">
                 </a>
 
-                <a class="navbar-brand d-block d-md-none" href="#">
+                <a class="navbar-brand d-block d-lg-none" href="index.html">
                     <img class="small-logo" src="img/logoAssetSmall 1@4x.png" alt="Logo">
                 </a>
                 
 
-                <ul class="navbar-nav d-none d-md-block">
+                <ul class="navbar-nav d-none d-lg-block">
                     <li class="nav-item">
                         <a class="nav-link" href="#">PRODUCTS</a>
                     </li>
@@ -36,17 +36,17 @@
         
                 <div class="flex-grow-1"></div>
 
-                <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto d-md-none">
+                    <ul class="navbar-nav ml-auto d-lg-none">
                         <li class="nav-item">
                             <a class="nav-link" href="#">PRODUCTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CART</a>
+                            <a class="nav-link" href="shopping_cart.html">CART</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ACCOUNT</a>
@@ -58,9 +58,9 @@
                 </div>
             
 
-                <ul class="navbar-nav d-none d-md-block">
+                <ul class="navbar-nav d-none d-lg-block">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CART</a>
+                        <a class="nav-link" href="shopping_cart.html">CART</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">ACCOUNT</a>
@@ -80,32 +80,32 @@
     <div class="product-detail">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-sm-12 order-lg-1 order-2">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-3 d-sm-none d-md-block" style="display:none">
+                            <div class="col-lg-3 d-lg-block" style="display:none">
                                 <div class="preview-side-bar">
                                     <div class="small-product-preview">
-                                        <img class="active" src="img/jigokuraku.jpg" onclick="changePreviewImage(this)">
+                                        <img class="active" src="img/jigokuraku5.jpg" onclick="changePreviewImage(this)">
                                     </div>
                                     <div class="small-product-preview">
-                                        <img src="img/jigokuraku_preview1.jpg" onclick="changePreviewImage(this)">
+                                        <img src="img/jigokuraku5_preview1.jpg" onclick="changePreviewImage(this)">
                                     </div>
                                     <div class="small-product-preview">
-                                        <img src="img/jigokuraku_preview2.jpg" onclick="changePreviewImage(this)">
+                                        <img src="img/jigokuraku5_preview2.jpg" onclick="changePreviewImage(this)">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-8">
+                            <div class="col-lg-8">
                                 <div class="large-product-preview">
-                                    <img src="img/jigokuraku.jpg" id="largeProductIMG">
+                                    <img src="img/jigokuraku5.jpg" id="largeProductIMG">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-4 offset-1">
+                <div class="col-lg-4 offset-1 order-lg-2 order-1">
                     <div class="container">
                         <div class="product-title">
                             Hell's Paradise: Jigokuraku, Vol.5
@@ -134,7 +134,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-8">
+                <div class="col-md-4 col-sm-10">
                     <div class="product-parameters">
                         <ul>
                             <li>Title: Hell's Paradise: Jigokuraku, Vol. 5</li>
@@ -152,54 +152,47 @@
             </div>
         </div>
 
-        <div class="container-fluid bg-dark justify-content-center">
-            <div class="product-recommendation">
-                <div class="row justify-content-center">
-                    <div class="col-3">
-                        <div class="product">
-                            <div class="product-menu">
-                                <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 5</p>
-                                <p class="product-author">YUJI KAKU</p>
-                                <a href="products_template.html" class="detail">Detail</a>
-                                <!-- <button class="to-cart">Add to cart</button> -->
-                
-                            </div>
-                            <div class="product-image">
-                                <img src="img/jigokuraku.jpg">
-                            </div>
-                        </div>
+
+
+        <div class="container-fluid bg-dark">
+            <div class="container product-recommendation">ň
+                <div>
+                    <h2>More like this</h2>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col">
+                            <a href="products_template.html">
+                                <div class="product">
+                                    <div class="product-image">
+                                        <img src="img/jigokuraku2.jpg">
+                                    </div>
+                                </div>
+                            </a>
                     </div>
-                    <div class="col-3">
-                        <div class="product">
-                            <div class="product-menu">
-                                <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 5</p>
-                                <p class="product-author">YUJI KAKU</p>
-                                <a href="products_template.html" class="detail">Detail</a>
-                                <!-- <button class="to-cart">Add to cart</button> -->
-                
+                    <div class="col">
+                        <a href="products_template.html">
+                            <div class="product">
+                                <div class="product-image">
+                                    <img src="img/jigokuraku1.jpg">
+                                </div>
                             </div>
-                            <div class="product-image">
-                                <img src="img/jigokuraku.jpg">
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="col-3">
-                        <div class="product">
-                            <div class="product-menu">
-                                <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 5</p>
-                                <p class="product-author">YUJI KAKU</p>
-                                <a href="products_template.html" class="detail">Detail</a>
-                                <!-- <button class="to-cart">Add to cart</button> -->
-                
+                    <div class="col">
+                        <a href="products_template.html">
+                            <div class="product">
+                                <div class="product-image">
+                                    <img src="img/jigokuraku6.jpg">
+                                </div>
                             </div>
-                            <div class="product-image">
-                                <img src="img/jigokuraku.jpg">
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+
+
 
 
     </div>
@@ -210,7 +203,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-2">
+                <div class="col-12 col-md-2">
                     <ul>
                         <li>ACCOUNT</li>
                         <li><a href="#">Login</a></li>
@@ -218,7 +211,7 @@
                         <li><a href="#">Shopping Cart</a></li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-12 col-md-2">
                     <ul>
                         <li>Products</li>
                         <li><a href="#">Best-Sellers</a></li>
@@ -226,7 +219,7 @@
                         <li><a href="#">Figures</a></li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-12 col-md-2">
                     <ul>
                         <li>HELP</li>
                         <li><a href="#">Contact</a></li>
