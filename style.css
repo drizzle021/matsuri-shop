@@ -446,38 +446,26 @@ footer img{
 
 
 .register{
-    flex: 1;
-    /*margin-bottom: 0px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    /*-webkit-mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);*/
+    /*mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);*/
 }
 
-/*.create-account{*/
-/*    width: 80%;*/
-/*    height: 60%;*/
-/*    background-color: #323232;*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%, -50%);*/
-
-/*    border-radius: 20px;*/
-
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*}*/
-
-
 .create-account {
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    width: 80%;
+    width: 100%;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 20px;
     background-color: #323232;
-    padding: 20px; /* Add padding for better spacing */
+    padding: 20px;
     z-index: 1;
+    height: fit-content;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .create-account-text{
@@ -522,15 +510,15 @@ footer img{
     font-size: 20px;
     font-weight: bold;
     color: #FFFFFF;
-    padding: 10px 40px;
+    padding: 10px;
     font-family: "Merriweather", serif;
 
     position: relative;
-    top: 90%;
-    left: 80%;
-    transform: translate(-50%, -50%);
+    width: 30%;
+    min-width: 200px;
     border: none;
     border-radius: 10px;
+    bottom: -40px;
 }
 
 .create-account .text-center{
@@ -552,47 +540,45 @@ footer img{
 }
 
 .create-account-img{
-    width: 80%;
+    width: 40%;
     max-width: 80%;
     height: auto;
-    border-radius: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
+    border-radius: 30px;
+    background-color: #FFF;
+    overflow: hidden;
+    margin-right: 5px;
+}
+.create-account-img img{
+    max-width: 100%;
+    max-height: auto;
 }
 
 .form-label{
     color: #9C9C9C;
 }
 
+.form-control{
+    max-width: 80%;
+}
+
+
+.login-background{
+    background-image: url('img/collage_wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    /*filter: brightness(10%);*/
+    background-color: #afaeae;
+    background-blend-mode: soft-light;
+}
 
 .fade-container {
     position: relative;
     overflow: hidden;
-}
-
-.fade-container::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
     z-index: 0;
-    background-image: url('img/collage_wallpaper.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: brightness(70%) grayscale(50%);
-
-    pointer-events: none;
+    height: 600px;
 }
 
-.fade-container::before {
-    background: linear-gradient(to bottom, transparent, white);
-}
 
-.fade-container::after {
-    background: linear-gradient(to top, transparent, white);
-}
 
 .col-md-5.form-container {
     margin-bottom: auto;
