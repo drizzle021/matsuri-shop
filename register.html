@@ -17,7 +17,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
 
-    <header>
+<header>
         <nav class="navbar navbar-expand-md navbar-white bg-white">
             <div class="container">
                 <a class="navbar-brand d-none d-md-block" href="#">
@@ -77,49 +77,46 @@
 
 
 
-    <div class="register">
+<div class="register register-background">
 
-        <div class="fade-container">
-            <img class="bg-image" src="img/collage_wallpaper_2.png" alt="background">
+    <div class="container create-account">
+        <div class="row align-items-center d-flex justify-content-center">
+            <h2 class="create-account-text">CREATE ACCOUNT</h2>
         </div>
 
-        <div class="container">
+        <div class="row align-items-center d-flex justify-content-center">
+            <div class="col-md-5 form-container">
+                <form action="register.html" method="POST">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="text" class="form-control" id="email" placeholder="mail@example.com" required minlength="10">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="**********" required minlength="10">
+                    </div>
 
-            <div class="create-account">
-                <p class="create-account-text">CREATE ACCOUNT</p><br>
-
-
-                <div class="credentials create-account">
-                    <form action="register.html" method="POST">
-                        <label for="email">Email Address</label><br>
-                        <input type="text" id="email" placeholder="mail@example.com" required minlength="10"><br><br>
-                        <label for="password">Password</label><br>
-                        <input type="password" id="password" placeholder="**********" required minlength="10">
-
-                    </form>
-                    <br>
                     <p class="have-account">Already have an account?</p>
                     <p class="login-switch"><a href="login.html">Login</a></p>
-                </div>
-
-                <div>
-                    <img class="create-account-img" src="img/profile_tanjiru.jpg" alt="account">
-                </div>
+                </form>
             </div>
 
+            <div class="col-md-6 create-account-img offset-md-1 d-none d-md-block">
+                <img src="img/profile_tanjiru.jpg" alt="account">
+            </div>
         </div>
 
-        <div>
-            <button class="create-account-button">
-                CREATE ACCOUNT
-            </button>
+        <div class="row d-flex justify-content-center">
+            <button type="submit" class="create-account-button btn-primary btn-block">CREATE ACCOUNT</button>
         </div>
+
     </div>
+</div>
 
 
 
 
-    <footer>
+<footer>
         <div class="container">
             <div class="row">
                 <div class="col-2">

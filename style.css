@@ -452,8 +452,9 @@ footer img{
     height: 100vh;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    /*-webkit-mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);*/
-    /*mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);*/
+    -webkit-mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
+    mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
+
 }
 
 .create-account {
@@ -482,6 +483,11 @@ footer img{
 
 .create-account .col-md-6{
     padding: 0 15px;
+}
+
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .credentials{
@@ -546,7 +552,7 @@ footer img{
     border-radius: 30px;
     background-color: #FFF;
     overflow: hidden;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 .create-account-img img{
     max-width: 100%;
@@ -571,6 +577,15 @@ footer img{
     background-blend-mode: soft-light;
 }
 
+.register-background{
+    background-image: url('img/collage_wallpaper_2.png');
+    background-size: cover;
+    background-position: center;
+    /*filter: brightness(10%);*/
+    background-color: #afaeae;
+    background-blend-mode: soft-light;
+}
+
 .fade-container {
     position: relative;
     overflow: hidden;
@@ -578,17 +593,53 @@ footer img{
     height: 600px;
 }
 
-
-
 .col-md-5.form-container {
     margin-bottom: auto;
     margin-left: auto;
 }
 
+.update-account-button{
+    background-color: #8C69EF;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px;
+    font-family: "Merriweather", serif;
 
+    position: relative;
+    width: 30%;
+    min-width: 200px;
+    border: none;
+    border-radius: 10px;
+    bottom: -40px;
+}
 
+.your-account-text{
+    color: #000000;
+    font-family: "Merriweather", serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
 
+.account-form-control{
+    color: #000000;
+    background-color: #e3e3e3;
+    max-width: 90%;
+}
 
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label, .form-group input, .form-group .account-form-control{
+    display: block;
+    width: 100%;
+}
+
+.form-group input {
+    margin-top: 5px;
+}
 
 
 
