@@ -1,9 +1,14 @@
 * {
     box-sizing: content-box;
 }
-body { 
-  overflow-x: hidden;
+body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
+
 a{
   text-decoration: none;
   color:inherit;
@@ -37,7 +42,7 @@ nav a:not(a:has(img)):hover {
 }
 
 .small-logo{
-    width:100px;
+    width: 100px;
     height: auto;
 }
 
@@ -454,7 +459,6 @@ footer img{
   .product-detail .product-recommendation .product:hover .product-image img{
     filter: none;
   }
- 
   .product-detail .product-recommendation h2{
     width: fit-content;
     color:#FFF;
@@ -583,7 +587,215 @@ h2{
 }
 
 
-  
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    -webkit-mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
+    mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
+
+}
+
+.create-account {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    background-color: #323232;
+    padding: 20px;
+    z-index: 1;
+    height: fit-content;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.create-account-text{
+    color: #FFFFFF;
+    font-family: "Merriweather", serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.create-account .row{
+    margin-top: 20px;
+}
+
+.create-account .col-md-6{
+    padding: 0 15px;
+}
+
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-margin{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.credentials{
+    font-size: 15px;
+    text-align: left;
+    font-family: "Merriweather", serif;
+    color: #9C9C9C;
+
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.have-account{
+    font-size: 15px;
+    text-align: left;
+    font-family: "Merriweather", serif;
+    color: #9C9C9C;
+    display: inline;
+    margin-right: 20px;
+}
+
+.create-account-button{
+    background-color: #8C69EF;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px;
+    font-family: "Merriweather", serif;
+
+    position: relative;
+    width: 30%;
+    min-width: 200px;
+    border: none;
+    border-radius: 10px;
+    bottom: -40px;
+}
+
+.create-account .text-center{
+    margin-top: 30%;
+}
+
+.login-switch{
+    display: inline;
+    color: #8C69EF;
+    text-decoration: underline;
+    font-family: "Merriweather", serif;
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%) grayscale(50%);
+
+}
+
+.create-account-img{
+    width: 40%;
+    max-width: 80%;
+    height: auto;
+    border-radius: 30px;
+    background-color: #FFF;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.create-account-img img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+.form-label{
+    color: #9C9C9C;
+}
+
+.form-control{
+    max-width: 80%;
+}
+
+
+.login-background{
+    background-image: url('img/collage_wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    /*filter: brightness(10%);*/
+    background-color: #afaeae;
+    background-blend-mode: soft-light;
+}
+
+.register-background{
+    background-image: url('img/collage_wallpaper_2.png');
+    background-size: cover;
+    background-position: center;
+    /*filter: brightness(10%);*/
+    background-color: #afaeae;
+    background-blend-mode: soft-light;
+}
+
+.fade-container {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    height: 600px;
+}
+
+.col-md-5.form-container {
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.update-account-button{
+    background-color: #8C69EF;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px;
+    font-family: "Merriweather", serif;
+
+    position: relative;
+    width: 30%;
+    min-width: 200px;
+    border: none;
+    border-radius: 10px;
+    bottom: -40px;
+}
+
+.your-account-text{
+    color: #000000;
+    font-family: "Merriweather", serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.account-form-control{
+    color: #000000;
+    background-color: #e3e3e3;
+    max-width: 90%;
+    width: 90%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label, .form-group input, .form-group .account-form-control{
+    display: block;
+    width: 100%;
+}
+
+.form-group input {
+    margin-top: 5px;
+}
+
+#account-form{
+    border-radius: 5px;
+}
+/*apply border radius for all input brev*/
+
+
+
 /* small landscape phone */
 @media (max-width: 767.98px) {
     .hero-text span{
