@@ -425,24 +425,166 @@ footer img{
     clip-path: rect(0% 0% 200px 100%);
   }
 
-  .product-detail .product-recommendation{
-    display:flex;
-    width:100%;
-    margin-top: 4vh;
-    height: fit-content;
-    justify-content:center;
-    align-items: center;
+
+  .product-detail .product-recommendation .product{
+    width: fit-content;
+    cursor: pointer;
+    margin: 60px 5px 60px 5px;
+
   }
-  .product-recommendation .product{
-    z-index: 1;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .product-recommendation .product-image{
-    width: 250px;
+  .product-detail .product-recommendation .product-image{
+    background-color:#FFF ;
+    width: 300px;
     height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+    z-index: 1;
+  }
+  .product-detail .product-recommendation .product-image img{
+    max-width: 100%;
+    max-height: auto;
+    z-index: 1;
+  }
+  .category-name{
+    width:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+  }
+  .product-detail .product-recommendation .product:hover .product-image img{
+    filter: none;
+  }
+  .product-detail .product-recommendation h2{
+    width: fit-content;
+    color:#FFF;
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    font-size: 42px;
+  }
+  .product-detail .product-recommendation hr{
+    color: #FFF;
   }
 
+  .shopping-cart .container{
+    display: flex;
+    background-color: #1F1F1F;
+    height: fit-content;
+    padding-top: 10vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart-items .container{
+    height: 300px;
+    width: 70%;
+  }
+  div.cart-items{
+    width:90%;
+
+  }
+  .cart-items .row{
+    background-color: #FFF;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  .cart-item .item-image{
+    margin: 30px;
+    width:300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cart-item img{
+      max-width: 100%;
+      max-height: auto;
+      min-width: 40px;
+      min-height:auto;
+  }
+
+  .remove{
+    width: 100px;
+    height:35px;
+    background-color: #FFF;
+    color:#1F1F1F;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    border-radius: 30px;
+    border-color: #1F1F1F;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.cart-item-title {
+  width: 350px;
+  max-height: 9em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.shopping-cart{
+  font-family: "Inter", sans-serif;
+}
+.shopping-cart .container:has(.checkout){
+  display: block;
+  background-color: #1F1F1F;
+  height: fit-content;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+
+}
+.checkout{
+  position: relative;
+  display:block;
+  width: 200px;
+  padding: 20px 10px 20px 10px;
+  left: 60%;
+  bottom:-30px;
+  color: #FFF;
+  background-color: #8C69EF;
+  border: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: larger;
+}
+.total{
+  width:fit-content;
+  display: inline-flex; 
+  position: relative;
+  left:60%;
+  color: #FFF;
+  padding-left: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 0;
+
+}
+h2{
+  display: inline-flex;
+  justify-content: center;
+  width:fit-content;
+  padding:0;
+  font-family: "Merriweather", serif;
+  font-size: 56px;
+  margin-top: 5vh !important;
+  margin-bottom: 10vh;
+}
+.cart-background{
+  background-image: url("img/crosshatch\ 1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: hard-light;
+}
+.amount-select{
+  width: 20px;
+}
 
 
 .register{
@@ -670,7 +812,7 @@ footer img{
     }
     .hero-section{
         height:35vh;
-    }
+    } 
 }
 /* small portrait phone*/
 @media (max-width: 575.98px) {
@@ -690,5 +832,19 @@ footer img{
         width: 280px;
         height:96px;
         font-size: x-large;
+    }
+    .product-detail .large-product-preview{
+      width:350px;
     }   
+}
+/* medium, tablet*/
+
+@media(max-width:991.98px){
+  .product-detail .large-product-preview{
+    width:500px;
+  }
+  .product-detail .small-product-preview{
+    display:none
+  }
+
 }
