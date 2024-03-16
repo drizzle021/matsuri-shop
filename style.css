@@ -152,7 +152,7 @@ footer img{
     position: relative;
   }
 
-  .product-image{
+.product-image{
     margin: 30px;
     width:300px;
     height:430px;
@@ -161,7 +161,7 @@ footer img{
     justify-content: center;
     overflow: hidden;
   }
-  .product-image img{
+.product-image img{
     max-width: 100%;
     max-height: auto;
 
@@ -171,7 +171,7 @@ footer img{
     transition: 0.5s ease-in;
   }
 
-  .overlay-discount {
+.overlay-discount {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,7 +194,7 @@ footer img{
     transition: .2s ease;
   }
 
-  .overlay-cost{
+.overlay-cost{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,11 +213,11 @@ footer img{
 
   }
 
-  .product:has(.overlay-discount) .overlay-cost{
+.product:has(.overlay-discount) .overlay-cost{
     text-decoration: line-through;
   }
 
-  .product-menu{
+.product-menu{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -228,22 +228,22 @@ footer img{
 
   }
 
-  .product:hover .product-menu{
+.product:hover .product-menu{
     opacity:90%;
     cursor:default;
   }
-  .product:hover .product-image img{
+.product:hover .product-image img{
     filter: blur(20px) ;
   }
 
-  .product:hover .overlay-discount{
+.product:hover .overlay-discount{
     opacity:0;
   }
-  .product:hover .overlay-cost{
+.product:hover .overlay-cost{
     opacity:0;
   }
 
-  .product-menu .detail{
+.product-menu .detail{
     width:30%;
     padding: 5px;
     font-size: 20px;
@@ -255,7 +255,7 @@ footer img{
     color:#FFF;
     text-align: center;
   }
-  .product-menu .to-cart{
+.product-menu .to-cart{
     width:40%;
     font-size: 20px;
     position: absolute;
@@ -266,23 +266,23 @@ footer img{
     color:#FFF;
   }
 
-  .product-menu button:hover{
+.product-menu button:hover{
     cursor:pointer
   }
 
-  .product-title,.product-author,.product-desc{
+.product-title,.product-author,.product-desc{
     color: #1E1E1E;
 
   }
 
-  .product-menu .product-title{
+.product-menu .product-title{
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 5px;
     font-size: 20px;
     font-weight: bold;
   }
-  .product-menu .product-author{
+.product-menu .product-author{
     margin-top: 5px;
     margin-left: 40px;
     margin-right: 40px;
@@ -290,13 +290,13 @@ footer img{
     font-size: 20px;
 
   }
-  .product-menu .product-desc{
+.product-menu .product-desc{
     margin-top: 5px;
     margin-left: 40px;
     margin-right: 40px;
     font-size: 15px;
   }
-  .wrapper {
+.wrapper {
     width: 350px;
     max-height: 9em;
     overflow: hidden;
@@ -306,13 +306,13 @@ footer img{
     text-overflow: ellipsis;
   }
 
-  .category{
+.category{
     width: fit-content;
     cursor: pointer;
     margin: 60px 5px 60px 5px;
 
   }
-  .category-image{
+.category-image{
     background-color:#FFF ;
     width: 400px;
     height: 500px;
@@ -321,11 +321,11 @@ footer img{
     justify-content: center;
     overflow:hidden;
   }
-  .category-image img{
+.category-image img{
     max-width: 100%;
     max-height: auto;
   }
-  .category-name{
+.category-name{
     width:100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -335,57 +335,57 @@ footer img{
     font-size: 24px;
   }
 
-  .category-name:hover{
+.category-name:hover{
     cursor: default;
     user-select: none;
   }
 
-  .product-detail{
+.product-detail{
     margin-top: 5vh;
   }
 
-  .preview-side-bar{
+.preview-side-bar{
     width:100%;
 
   }
   
-  .small-product-preview img:not(.active){
+.small-product-preview img:not(.active){
     opacity: 20%;
   }
 
-  .product-detail .small-product-preview{
+.product-detail .small-product-preview{
     display: flex;
     justify-content: space-around;
     width: inherit;
     height: 250px;
   }
-  .product-detail .small-product-preview img{
+.product-detail .small-product-preview img{
     max-width: 100%;
     max-height: auto;
     margin-top: 5px;
   }
-  .product-detail .large-product-preview{
+.product-detail .large-product-preview{
     width: 500px;
     height: 750px;
   }
-  .product-detail .large-product-preview img{
+.product-detail .large-product-preview img{
     max-width: 100%;
     max-height: auto;
   }
 
-  .product-detail .product-title{
+.product-detail .product-title{
     font-family: "Merriweather", serif;
     font-size: 50px;
     color: #1E1E1E;
   }
-  .product-detail .product-author{
+.product-detail .product-author{
     font-family: "Inter", sans-serif;
     font-size: x-large;
     color: #757575;
 
   }
 
-  .product-detail .product-desc{
+.product-detail .product-desc{
     width:80%;
     background-color: #E6E6E6;
     margin-top: 10vh;
@@ -397,7 +397,7 @@ footer img{
 
   }
 
-  .product-detail .product-parameters{
+.product-detail .product-parameters{
     display: flex;
     align-items: center;
     width:100%;
@@ -411,13 +411,13 @@ footer img{
     font-size: large;
   }
   
-  .product-detail .image{
+.product-detail .image{
       display:flex;
       align-items: center;
       justify-content: center;
       height:200px;
   }
-  .product-detail .image img{
+.product-detail .image img{
     position:relative;
     top:120px;
     max-width:100%;
@@ -426,13 +426,13 @@ footer img{
   }
 
 
-  .product-detail .product-recommendation .product{
+.product-detail .product-recommendation .product{
     width: fit-content;
     cursor: pointer;
     margin: 60px 5px 60px 5px;
 
   }
-  .product-detail .product-recommendation .product-image{
+.product-detail .product-recommendation .product-image{
     background-color:#FFF ;
     width: 300px;
     height: 400px;
@@ -442,12 +442,12 @@ footer img{
     overflow:hidden;
     z-index: 1;
   }
-  .product-detail .product-recommendation .product-image img{
+.product-detail .product-recommendation .product-image img{
     max-width: 100%;
     max-height: auto;
     z-index: 1;
   }
-  .category-name{
+.category-name{
     width:100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -456,56 +456,57 @@ footer img{
     text-align: center;
     font-size: 24px;
   }
-  .product-detail .product-recommendation .product:hover .product-image img{
+.product-detail .product-recommendation .product:hover .product-image img{
     filter: none;
   }
-  .product-detail .product-recommendation h2{
+.product-detail .product-recommendation h2{
     width: fit-content;
     color:#FFF;
     font-family: "Merriweather", serif;
     font-weight: bold;
     font-size: 42px;
   }
-  .product-detail .product-recommendation hr{
+.product-detail .product-recommendation hr{
     color: #FFF;
   }
 
-  .shopping-cart .container{
+.shopping-cart .container{
     display: flex;
     background-color: #1F1F1F;
     height: fit-content;
+    min-width: 70%;
     padding-top: 10vh;
     justify-content: center;
     align-items: center;
   }
-  .cart-items .container{
+.cart-items .container{
     height: 300px;
     width: 70%;
   }
-  div.cart-items{
+div.cart-items{
     width:90%;
 
   }
-  .cart-items .row{
+.cart-items .row{
     background-color: #FFF;
     margin-top: 2vh;
     margin-bottom: 2vh;
   }
-  .cart-item .item-image{
+.cart-item .item-image{
     margin: 30px;
     width:300px;
     display:flex;
     align-items: center;
     justify-content: center;
   }
-  .cart-item img{
+.cart-item img{
       max-width: 100%;
       max-height: auto;
       min-width: 40px;
       min-height:auto;
   }
 
-  .remove{
+.remove{
     width: 100px;
     height:35px;
     background-color: #FFF;
@@ -516,6 +517,8 @@ footer img{
     border-color: #1F1F1F;
     border-width: 2px;
     border-style: solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .cart-item-title {
@@ -541,7 +544,8 @@ footer img{
 .checkout{
   position: relative;
   display:block;
-  width: 200px;
+  max-width: 20%;
+  min-width: 100px;
   padding: 20px 10px 20px 10px;
   left: 60%;
   bottom:-30px;
@@ -812,7 +816,7 @@ h2{
     }
     .hero-section{
         height:35vh;
-    } 
+    }
 }
 /* small portrait phone*/
 @media (max-width: 575.98px) {
@@ -845,6 +849,15 @@ h2{
   }
   .product-detail .small-product-preview{
     display:none
+  }
+  .checkout{
+    position: relative;
+    left:auto;
+
+  }
+  .total{
+    position: static;
+    left:auto;
   }
 
 }
