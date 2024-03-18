@@ -862,6 +862,52 @@ h2{
 }
 /*apply border radius for all input brev*/
 
+.dashboard-add, .dashboard-edit{
+  height: 500px;
+  margin-top: 10px;
+}
+.dashboard-add select,.dashboard-add input, .dashboard-add textarea{
+  margin-left: 15px;
+}
+.dashboard-edit select,.dashboard-edit input, .dashboard-edit textarea{
+  margin-left: 15px;
+}
+.dashboard-button{
+  background-color: #8C69EF;
+  color: #FFF;
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  margin-top:50px;
+
+  border:none;
+  border-radius: 99px;
+  font-family: "Inter", "sans-serif";
+  font-weight: bold;
+  font-size: xx-large;
+}
+textarea{
+  resize: none;
+}
+.category-select{
+  width:180px;
+  border-radius: 99px;
+}
+.dashboard{
+  padding-top: 250px;
+  padding-bottom: 200px;
+  height: 150vh;
+  background-image: url("img/quints_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #6d6d6d;
+  background-blend-mode: soft-light;
+  -webkit-mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
+    mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
+
+}
 
 
 
