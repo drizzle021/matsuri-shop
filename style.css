@@ -534,6 +534,7 @@ footer img{
     color: #FFF;
   }
 
+
 .shopping-cart .container{
     display: flex;
     background-color: #1F1F1F;
@@ -607,7 +608,7 @@ div.cart-items{
 }
 .checkout{
   position: relative;
-  display:block;
+  display: block;
   max-width: 20%;
   min-width: 100px;
   padding: 20px 10px 20px 10px;
@@ -776,10 +777,13 @@ h2{
 
 .form-label{
     color: #9C9C9C;
+    max-width: 100px;
+    padding-right: 100px;
 }
 
 .form-control{
     max-width: 80%;
+    /*max-width: 400px;*/
 }
 
 
@@ -790,6 +794,7 @@ h2{
     /*filter: brightness(10%);*/
     background-color: #afaeae;
     background-blend-mode: soft-light;
+    height: 1000px;
 }
 
 .register-background{
@@ -799,6 +804,46 @@ h2{
     /*filter: brightness(10%);*/
     background-color: #afaeae;
     background-blend-mode: soft-light;
+    height: 1000px;
+}
+
+.account-background{
+    background-image: url('img/collage_wallpaper_2.png');
+    background-size: cover;
+    background-position: center;
+    /*filter: brightness(10%);*/
+    background-color: #afaeae;
+    background-blend-mode: soft-light;
+    height: 1000px;
+}
+
+.payment-background{
+    background-image: url('img/collage_wallpaper_2.png');
+    background-size: cover;
+    background-position: center;
+    /*filter: brightness(10%);*/
+    background-color: #afaeae;
+    background-blend-mode: soft-light;
+    height: 1000px;
+
+    margin-bottom: 100px;
+}
+
+.account{
+    margin-top: 20vh;
+    height: 100vh;
+    margin-bottom: 20px;
+}
+
+.account-box{
+    padding-top: 5vh;
+    height: fit-content;
+}
+
+.checkout-box{
+    margin-top: 10vh;
+    padding-top: 5vh;
+    height: 700px;
 }
 
 .fade-container {
@@ -829,6 +874,38 @@ h2{
     bottom: -40px;
 }
 
+.logout-button{
+    background-color: #8C69EF;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px;
+    font-family: "Merriweather", serif;
+
+    position: relative;
+    width: 30%;
+    min-width: 200px;
+    border: none;
+    border-radius: 10px;
+    bottom: -45px;
+}
+
+.pay-now-button{
+    background-color: #8C69EF;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px;
+    font-family: "Merriweather", serif;
+
+    position: relative;
+    width: 30%;
+    min-width: 200px;
+    border: none;
+    border-radius: 10px;
+    bottom: -450px;
+}
+
 .your-account-text{
     color: #000000;
     font-family: "Merriweather", serif;
@@ -846,6 +923,7 @@ h2{
 
 .form-group {
     margin-bottom: 20px;
+    color: #FFFFFF;
 }
 
 .form-group label, .form-group input, .form-group .account-form-control{
@@ -857,10 +935,58 @@ h2{
     margin-top: 5px;
 }
 
+
+
+
+.form-check-input{
+    /*color: #000000;*/
+    background-color: #6d6d6d;
+    width: 30px;
+    height: 30px;
+}
+
+.form-check{
+    color: #000000;
+    background-color: #ffffff;
+    max-width: 80%;
+    height: 40px;
+    border-radius: 6px;
+    margin-top: 5px;
+    padding-left: 35px;
+}
+
+.form-check-label{
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+input[type="radio"]:checked {
+    background-color: #8C69EF;
+    border-color: #8C69EF;
+}
+
+.checkout-heading{
+    color: #ffffff;
+}
+
+.visa_img{
+    height: 40px;
+    width: 60px;
+    /*padding-left: 520px;*/
+    padding-bottom: 10px;
+}
+
+.master_card_img{
+    height: 40px;
+    width: 60px;
+    /*padding-left: 550px;*/
+    padding-bottom: 10px;
+}
+
 #account-form{
     border-radius: 5px;
 }
-/*apply border radius for all input brev*/
+
 
 .dashboard-add, .dashboard-edit{
   height: 500px;
@@ -910,8 +1036,6 @@ textarea{
 }
 
 
-
-
 /* small landscape phone */
 @media (max-width: 767.98px) {
     .hero-text span{
@@ -928,6 +1052,28 @@ textarea{
     }
     .hero-section{
         height:35vh;
+    }
+
+    .account-background{
+        height: 1500px;
+    }
+
+    .register-background{
+        height: 1000px;
+    }
+
+    .login-background{
+        height: 1000px;
+    }
+
+    .payment-background{
+        height: 1200px;
+    }
+    .checkout-box{
+        height: fit-content;
+    }
+    .pay-now-button{
+        bottom: -45px;
     }
 }
 /* small portrait phone*/
@@ -949,10 +1095,32 @@ textarea{
         height:96px;
         font-size: x-large;
     }
-    .product-detail .large-product-preview{
-      width:350px;
-      height: auto;
-    }   
+    .product-detail .large-product-preview {
+        width: 350px;
+        height: auto;
+    }
+
+    .account-background{
+        height: 1000px;
+    }
+
+    .register-background{
+        height: 1000px;
+    }
+
+    .login-background{
+        height: 1000px;
+    }
+
+    .payment-background{
+        height: 1000px;
+    }
+    .checkout-box{
+        height: fit-content;
+    }
+    .pay-now-button{
+        bottom: -45px;
+    }
 }
 /* medium, tablet*/
 
