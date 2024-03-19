@@ -415,7 +415,7 @@ footer img{
     justify-content: center;
     cursor: default;
     width: 30%;
-    height: 30%;
+    height: auto;
     font-size: 20px;
     padding: 40px;
     text-align: center;
@@ -863,7 +863,7 @@ h2{
 /*apply border radius for all input brev*/
 
 .dashboard-add, .dashboard-edit{
-  height: 500px;
+  height: fit-content;
   margin-top: 10px;
 }
 .dashboard-add select,.dashboard-add input, .dashboard-add textarea{
@@ -897,7 +897,8 @@ textarea{
 .dashboard{
   padding-top: 250px;
   padding-bottom: 200px;
-  height: 150vh;
+  margin-bottom: 100px;
+  height: 1200px;
   background-image: url("img/quints_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -905,11 +906,20 @@ textarea{
   background-color: #6d6d6d;
   background-blend-mode: soft-light;
   -webkit-mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
-    mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
+  mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
 
-}
-
-
+  }
+  .dashboard-search{
+    width: 80px;
+    background-color: transparent;
+    background-image: url("img/search-icon.webp");
+    filter: invert();
+    border:none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
 
 /* small landscape phone */
@@ -982,3 +992,4 @@ textarea{
   }
 
 }
+
