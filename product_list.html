@@ -80,7 +80,7 @@
     <div class="product-list">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="d-flex col-12 col-md-3 justify-content-centers">
+                <div class="d-flex col-10 col-md-3 justify-content-center px-0 px-md-5">
                         <div class="container-fluid bg-dark product-list-filter-section p-4">
                             <form method="GET" id="filter">
                                 <div class="row pb-5 mb-4">
@@ -100,12 +100,12 @@
                                 <div class="row justify-content-center pb-3">
                                     <label class="form-label" for="filter-range-price-min">Price from (€):</label>
                                     <input type="range" id="filter-range-price-min" name="filter-range-price-min" value="0" min="0" max="300">
-                                    <input type="number" id="filter-min-text" value="0" min="0" max="300" step="1" class="form-control" onchange="changeSliderValue(this.value, 'filter-range-price-min')">
+                                    <input type="number" id="filter-min-text" value="0" min="0" max="300" step="5" class="form-control" onchange="changeSliderValue(this.value, 'filter-range-price-min')">
                                 </div>
                                 <div class="row justify-content-center pb-5">
                                     <label class="form-label" for="filter-range-price-max">Price to (€):</label>
                                     <input type="range" id="filter-range-price-max" name="filter-range-price-max" value="10" min="0" max="300">
-                                    <input type="number" id="filter-max-text" value="300" min="0" max="300"  step="1" class="form-control" onchange="changeSliderValue(this.value, 'filter-range-price-max')">
+                                    <input type="number" id="filter-max-text" value="300" min="0" max="300"  step="5" class="form-control" onchange="changeSliderValue(this.value, 'filter-range-price-max')">
                                 </div>
                                 <div class="row justify-content-center pb-4">
                                     <label for="product-list-order-by" class="form-label">Order By</label>
@@ -119,12 +119,12 @@
                                 </div>
                                 <div class="row pb-4">
                                     <div class="col">
-                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#category" onclick="switchCollapseElement('category-collapse')">
+                                        <button class="navbar-toggler py-4" type="button" data-toggle="collapse" data-target="#category" onclick="switchCollapseElement('category-collapse')">
                                             CATEGORY
                                         </button>
                                     </div>
                                     
-                                    <div class="col collapse-element" id="category-collapse">+</div>
+                                    <div class="col collapse-element py-3" id="category-collapse">+</div>
                         
                                     <div class="collapse navbar-collapse" id="category">
                                         <ul class="navbar-nav ml-auto">
@@ -154,11 +154,11 @@
                                 </div>
                                 <div class="row pb-4">
                                     <div class="col">
-                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#series" onclick="switchCollapseElement('series-collapse')">
+                                        <button class="navbar-toggler py-4" type="button" data-toggle="collapse" data-target="#series" onclick="switchCollapseElement('series-collapse')">
                                             SERIES
                                         </button>
                                     </div>
-                                    <div class="col collapse-element" id="series-collapse">+</div>
+                                    <div class="col collapse-element py-3" id="series-collapse">+</div>
                                     
                         
                                     <div class="collapse navbar-collapse " id="series">
@@ -190,13 +190,78 @@
                             </form> 
                         </div>
                 </div>
-                <div class="col-12 col-md-7 offset-md-1 justify-content-center">
-                    <div class="container product-list-product-section">
-                        <div class="row">
-                            <div class="col">
+                <div class="col-12 col-md-8 justify-content-center px-0">
+                    <div class="container justify-content-center px-0">
+                        <div class="product-list-product-section">
+                            <div class="row">
+                                <div class="col">
+                                            <div class="product">
+                                                <div class="product-menu">
+                                                    <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 5</p>
+                                                    <p class="product-author">YUJI KAKU</p>
+                                                    <div class="wrapper">
+                                                        <div class="product-desc">Even an invincible ninja may not be able to survive Hell's Paradise!
+                                                            Gabimaru is a ninja on death row with one chance to see his wife again—by finding the elixir of
+                                                            immortality on a supernatural island and delivering it to the shogun. Standing in his way are his
+                                                            fellow convicts and the fearsome beasts that roam the island, devouring or killing anyone they
+                                                            encounter.
+                                        
+                                                            Gabimaru and his companions are confronted with the mysteries of tao, the supernatural phenomenon
+                                                            that turns the beings known as Lord Tensen into fearsome enemies. And when Gabimaru begins acting
+                                                            strangely, is there any hope for his companions, or will they face certain death at his hands?
+                                                        </div>
+                                                    </div>
+                                                    <a href="product_detail.html" class="detail">Detail</a>
+                                                    <!-- <button class="to-cart">Add to cart</button> -->
+                                    
+                                                </div>
+                                                <div class="product-image">
+                                                    <img src="img/jigokuraku5.jpg">
+                                                </div>
+                                                <span class="overlay-cost">10.00€</span>
+                                                <span class="overlay-discount">-20%<br>8.00€</span>
+                                    
+                                    
+                                            </div>
+                                </div>
+                                <div class="col">
                                         <div class="product">
                                             <div class="product-menu">
-                                                <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 5</p>
+                                                <p class="product-title">The Quintessential Quintuplets 1</p>
+                                                <p class="product-author">NEGI HARUBA</p>
+                                                <div class="wrapper">
+                                                    <div class="product-desc">
+                                                        A high school romantic comedy with five times the cute girls! A high school boy must work part-time
+                                                        to help five sisters study so they can graduate, but the only thing these quintuplets have in common
+                                                        is that they all hate studying!
+                                    
+                                                        FIVE TIMES THE TROUBLE
+                                    
+                                                        Five girls who want to do anything but study, and their tutor: A high school boy who's got book
+                                                        smarts and not much else. Futaro Uesugi took the tutoring gig because he was desperate for cash, but
+                                                        when his students--the five beautiful daughters of a wealthy businessman--find five times the
+                                                        excuses to slack off, what can he do?! At this rate, the sisters won't graduate, so if he wants to
+                                                        get paid, Futaro must think of a plan to suit each of them... Which feels hopeless when five out of
+                                                        five of them think he's a loser!
+                                                    </div>
+                                                </div>  
+                                                <a href="product_detail.html" class="detail">Detail</a>
+                                                <!-- <button class="to-cart">Add to cart</button> -->
+                                
+                                            </div>
+                                            <div class="product-image">
+                                                <img src="img/quints.jpg">
+                                            </div>
+                                            <span class="overlay-cost">10.84€</span>
+                                
+                                        </div>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col">
+                                        <div class="product">
+                                            <div class="product-menu">
+                                                <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 1</p>
                                                 <p class="product-author">YUJI KAKU</p>
                                                 <div class="wrapper">
                                                     <div class="product-desc">Even an invincible ninja may not be able to survive Hell's Paradise!
@@ -212,262 +277,199 @@
                                                 </div>
                                                 <a href="product_detail.html" class="detail">Detail</a>
                                                 <!-- <button class="to-cart">Add to cart</button> -->
+                                                
+                                            </div>
+                                            <div class="product-image">
+                                                <img src="img/jigokuraku1.jpg">
+                                            </div>
+                                            <span class="overlay-cost">10.00€</span>
+                                
+                                
+                                        </div>
+                                </div>
+                                <div class="col">
+                                        <div class="product">
+                                            <div class="product-menu">
+                                                <p class="product-title">Oshi no Ko MEMcho (Plain Clothes Ver.) Figure</p>
+                                                <p class="product-author"></p>
+                                                <div class="wrapper">
+                                                    <div class="product-desc">
+                                                        Banpresto is proud to introduce a new figure from the smash hit anime series Oshi no Ko: the pop
+                                                        star MEMcho! Dressed in plain clothes, she's ready to start her day
+                                                    </div>
+                                                </div>
+                                                <a href="product_detail.html" class="detail">Detail</a>
+                                                <!-- <button class="to-cart">Add to cart</button> -->
                                 
                                             </div>
                                             <div class="product-image">
-                                                <img src="img/jigokuraku5.jpg">
+                                                <img src="img/mem.jpg">
+                                            </div>
+                                            <span class="overlay-cost">26.99€</span>
+                                            <span class="overlay-discount">-10%<br>24,29€</span>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                        <div class="product">
+                                            <div class="product-menu">
+                                                <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 1</p>
+                                                <p class="product-author">YUJI KAKU</p>
+                                                <div class="wrapper">
+                                                    <div class="product-desc">Even an invincible ninja may not be able to survive Hell's Paradise!
+                                                        Gabimaru is a ninja on death row with one chance to see his wife again—by finding the elixir of
+                                                        immortality on a supernatural island and delivering it to the shogun. Standing in his way are his
+                                                        fellow convicts and the fearsome beasts that roam the island, devouring or killing anyone they
+                                                        encounter.
+                                    
+                                                        Gabimaru and his companions are confronted with the mysteries of tao, the supernatural phenomenon
+                                                        that turns the beings known as Lord Tensen into fearsome enemies. And when Gabimaru begins acting
+                                                        strangely, is there any hope for his companions, or will they face certain death at his hands?
+                                                    </div>
+                                                </div>
+                                                <a href="product_detail.html" class="detail">Detail</a>
+                                                <!-- <button class="to-cart">Add to cart</button> -->
+                                                
+                                            </div>
+                                            <div class="product-image">
+                                                <img src="img/jigokuraku1.jpg">
                                             </div>
                                             <span class="overlay-cost">10.00€</span>
-                                            <span class="overlay-discount">-20%<br>8.00€</span>
                                 
                                 
                                         </div>
-                            </div>
-                            <div class="col">
-                                    <div class="product">
-                                        <div class="product-menu">
-                                            <p class="product-title">The Quintessential Quintuplets 1</p>
-                                            <p class="product-author">NEGI HARUBA</p>
-                                            <div class="wrapper">
-                                                <div class="product-desc">
-                                                    A high school romantic comedy with five times the cute girls! A high school boy must work part-time
-                                                    to help five sisters study so they can graduate, but the only thing these quintuplets have in common
-                                                    is that they all hate studying!
-                                
-                                                    FIVE TIMES THE TROUBLE
-                                
-                                                    Five girls who want to do anything but study, and their tutor: A high school boy who's got book
-                                                    smarts and not much else. Futaro Uesugi took the tutoring gig because he was desperate for cash, but
-                                                    when his students--the five beautiful daughters of a wealthy businessman--find five times the
-                                                    excuses to slack off, what can he do?! At this rate, the sisters won't graduate, so if he wants to
-                                                    get paid, Futaro must think of a plan to suit each of them... Which feels hopeless when five out of
-                                                    five of them think he's a loser!
+                                </div>
+                                <div class="col">
+                                        <div class="product">
+                                            <div class="product-menu">
+                                                <p class="product-title">Oshi no Ko MEMcho (Plain Clothes Ver.) Figure</p>
+                                                <p class="product-author"></p>
+                                                <div class="wrapper">
+                                                    <div class="product-desc">
+                                                        Banpresto is proud to introduce a new figure from the smash hit anime series Oshi no Ko: the pop
+                                                        star MEMcho! Dressed in plain clothes, she's ready to start her day
+                                                    </div>
                                                 </div>
-                                            </div>  
-                                            <a href="product_detail.html" class="detail">Detail</a>
-                                            <!-- <button class="to-cart">Add to cart</button> -->
-                            
-                                        </div>
-                                        <div class="product-image">
-                                            <img src="img/quints.jpg">
-                                        </div>
-                                        <span class="overlay-cost">10.84€</span>
-                            
-                                    </div>
-                            </div>
-                        </div> 
-                        <div class="row">
-                            <div class="col">
-                                    <div class="product">
-                                        <div class="product-menu">
-                                            <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 1</p>
-                                            <p class="product-author">YUJI KAKU</p>
-                                            <div class="wrapper">
-                                                <div class="product-desc">Even an invincible ninja may not be able to survive Hell's Paradise!
-                                                    Gabimaru is a ninja on death row with one chance to see his wife again—by finding the elixir of
-                                                    immortality on a supernatural island and delivering it to the shogun. Standing in his way are his
-                                                    fellow convicts and the fearsome beasts that roam the island, devouring or killing anyone they
-                                                    encounter.
+                                                <a href="product_detail.html" class="detail">Detail</a>
+                                                <!-- <button class="to-cart">Add to cart</button> -->
                                 
-                                                    Gabimaru and his companions are confronted with the mysteries of tao, the supernatural phenomenon
-                                                    that turns the beings known as Lord Tensen into fearsome enemies. And when Gabimaru begins acting
-                                                    strangely, is there any hope for his companions, or will they face certain death at his hands?
-                                                </div>
                                             </div>
-                                            <a href="product_detail.html" class="detail">Detail</a>
-                                            <!-- <button class="to-cart">Add to cart</button> -->
-                                            
-                                        </div>
-                                        <div class="product-image">
-                                            <img src="img/jigokuraku1.jpg">
-                                        </div>
-                                        <span class="overlay-cost">10.00€</span>
-                            
-                            
-                                    </div>
-                            </div>
-                            <div class="col">
-                                    <div class="product">
-                                        <div class="product-menu">
-                                            <p class="product-title">Oshi no Ko MEMcho (Plain Clothes Ver.) Figure</p>
-                                            <p class="product-author"></p>
-                                            <div class="wrapper">
-                                                <div class="product-desc">
-                                                    Banpresto is proud to introduce a new figure from the smash hit anime series Oshi no Ko: the pop
-                                                    star MEMcho! Dressed in plain clothes, she's ready to start her day
-                                                </div>
+                                            <div class="product-image">
+                                                <img src="img/mem.jpg">
                                             </div>
-                                            <a href="product_detail.html" class="detail">Detail</a>
-                                            <!-- <button class="to-cart">Add to cart</button> -->
-                            
+                                            <span class="overlay-cost">26.99€</span>
+                                            <span class="overlay-discount">-10%<br>24,29€</span>
                                         </div>
-                                        <div class="product-image">
-                                            <img src="img/mem.jpg">
-                                        </div>
-                                        <span class="overlay-cost">26.99€</span>
-                                        <span class="overlay-discount">-10%<br>24,29€</span>
-                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                    <div class="product">
-                                        <div class="product-menu">
-                                            <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 1</p>
-                                            <p class="product-author">YUJI KAKU</p>
-                                            <div class="wrapper">
-                                                <div class="product-desc">Even an invincible ninja may not be able to survive Hell's Paradise!
-                                                    Gabimaru is a ninja on death row with one chance to see his wife again—by finding the elixir of
-                                                    immortality on a supernatural island and delivering it to the shogun. Standing in his way are his
-                                                    fellow convicts and the fearsome beasts that roam the island, devouring or killing anyone they
-                                                    encounter.
+                            <div class="row">
+                                <div class="col">
+                                        <div class="product">
+                                            <div class="product-menu">
+                                                <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 1</p>
+                                                <p class="product-author">YUJI KAKU</p>
+                                                <div class="wrapper">
+                                                    <div class="product-desc">Even an invincible ninja may not be able to survive Hell's Paradise!
+                                                        Gabimaru is a ninja on death row with one chance to see his wife again—by finding the elixir of
+                                                        immortality on a supernatural island and delivering it to the shogun. Standing in his way are his
+                                                        fellow convicts and the fearsome beasts that roam the island, devouring or killing anyone they
+                                                        encounter.
+                                    
+                                                        Gabimaru and his companions are confronted with the mysteries of tao, the supernatural phenomenon
+                                                        that turns the beings known as Lord Tensen into fearsome enemies. And when Gabimaru begins acting
+                                                        strangely, is there any hope for his companions, or will they face certain death at his hands?
+                                                    </div>
+                                                </div>
+                                                <a href="product_detail.html" class="detail">Detail</a>
+                                                <!-- <button class="to-cart">Add to cart</button> -->
+                                                
+                                            </div>
+                                            <div class="product-image">
+                                                <img src="img/jigokuraku1.jpg">
+                                            </div>
+                                            <span class="overlay-cost">10.00€</span>
                                 
-                                                    Gabimaru and his companions are confronted with the mysteries of tao, the supernatural phenomenon
-                                                    that turns the beings known as Lord Tensen into fearsome enemies. And when Gabimaru begins acting
-                                                    strangely, is there any hope for his companions, or will they face certain death at his hands?
-                                                </div>
-                                            </div>
-                                            <a href="product_detail.html" class="detail">Detail</a>
-                                            <!-- <button class="to-cart">Add to cart</button> -->
-                                            
-                                        </div>
-                                        <div class="product-image">
-                                            <img src="img/jigokuraku1.jpg">
-                                        </div>
-                                        <span class="overlay-cost">10.00€</span>
-                            
-                            
-                                    </div>
-                            </div>
-                            <div class="col">
-                                    <div class="product">
-                                        <div class="product-menu">
-                                            <p class="product-title">Oshi no Ko MEMcho (Plain Clothes Ver.) Figure</p>
-                                            <p class="product-author"></p>
-                                            <div class="wrapper">
-                                                <div class="product-desc">
-                                                    Banpresto is proud to introduce a new figure from the smash hit anime series Oshi no Ko: the pop
-                                                    star MEMcho! Dressed in plain clothes, she's ready to start her day
-                                                </div>
-                                            </div>
-                                            <a href="product_detail.html" class="detail">Detail</a>
-                                            <!-- <button class="to-cart">Add to cart</button> -->
-                            
-                                        </div>
-                                        <div class="product-image">
-                                            <img src="img/mem.jpg">
-                                        </div>
-                                        <span class="overlay-cost">26.99€</span>
-                                        <span class="overlay-discount">-10%<br>24,29€</span>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                    <div class="product">
-                                        <div class="product-menu">
-                                            <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 1</p>
-                                            <p class="product-author">YUJI KAKU</p>
-                                            <div class="wrapper">
-                                                <div class="product-desc">Even an invincible ninja may not be able to survive Hell's Paradise!
-                                                    Gabimaru is a ninja on death row with one chance to see his wife again—by finding the elixir of
-                                                    immortality on a supernatural island and delivering it to the shogun. Standing in his way are his
-                                                    fellow convicts and the fearsome beasts that roam the island, devouring or killing anyone they
-                                                    encounter.
                                 
-                                                    Gabimaru and his companions are confronted with the mysteries of tao, the supernatural phenomenon
-                                                    that turns the beings known as Lord Tensen into fearsome enemies. And when Gabimaru begins acting
-                                                    strangely, is there any hope for his companions, or will they face certain death at his hands?
+                                        </div>
+                                    
+                                </div>
+                                <div class="col">
+                                        <div class="product">
+                                            <div class="product-menu">
+                                                <p class="product-title">Oshi no Ko MEMcho (Plain Clothes Ver.) Figure</p>
+                                                <p class="product-author"></p>
+                                                <div class="wrapper">
+                                                    <div class="product-desc">
+                                                        Banpresto is proud to introduce a new figure from the smash hit anime series Oshi no Ko: the pop
+                                                        star MEMcho! Dressed in plain clothes, she's ready to start her day
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <a href="product_detail.html" class="detail">Detail</a>
-                                            <!-- <button class="to-cart">Add to cart</button> -->
-                                            
-                                        </div>
-                                        <div class="product-image">
-                                            <img src="img/jigokuraku1.jpg">
-                                        </div>
-                                        <span class="overlay-cost">10.00€</span>
-                            
-                            
-                                    </div>
+                                                <a href="product_detail.html" class="detail">Detail</a>
+                                                <!-- <button class="to-cart">Add to cart</button> -->
                                 
-                            </div>
-                            <div class="col">
-                                    <div class="product">
-                                        <div class="product-menu">
-                                            <p class="product-title">Oshi no Ko MEMcho (Plain Clothes Ver.) Figure</p>
-                                            <p class="product-author"></p>
-                                            <div class="wrapper">
-                                                <div class="product-desc">
-                                                    Banpresto is proud to introduce a new figure from the smash hit anime series Oshi no Ko: the pop
-                                                    star MEMcho! Dressed in plain clothes, she's ready to start her day
-                                                </div>
                                             </div>
-                                            <a href="product_detail.html" class="detail">Detail</a>
-                                            <!-- <button class="to-cart">Add to cart</button> -->
-                            
+                                            <div class="product-image">
+                                                <img src="img/mem.jpg">
+                                            </div>
+                                            <span class="overlay-cost">26.99€</span>
+                                            <span class="overlay-discount">-10%<br>24,29€</span>
                                         </div>
-                                        <div class="product-image">
-                                            <img src="img/mem.jpg">
-                                        </div>
-                                        <span class="overlay-cost">26.99€</span>
-                                        <span class="overlay-discount">-10%<br>24,29€</span>
-                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                    <div class="product">
-                                        <div class="product-menu">
-                                            <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 1</p>
-                                            <p class="product-author">YUJI KAKU</p>
-                                            <div class="wrapper">
-                                                <div class="product-desc">Even an invincible ninja may not be able to survive Hell's Paradise!
-                                                    Gabimaru is a ninja on death row with one chance to see his wife again—by finding the elixir of
-                                                    immortality on a supernatural island and delivering it to the shogun. Standing in his way are his
-                                                    fellow convicts and the fearsome beasts that roam the island, devouring or killing anyone they
-                                                    encounter.
+                            <div class="row">
+                                <div class="col">
+                                        <div class="product">
+                                            <div class="product-menu">
+                                                <p class="product-title">Hell's Paradise: Jigokuraku, Vol. 1</p>
+                                                <p class="product-author">YUJI KAKU</p>
+                                                <div class="wrapper">
+                                                    <div class="product-desc">Even an invincible ninja may not be able to survive Hell's Paradise!
+                                                        Gabimaru is a ninja on death row with one chance to see his wife again—by finding the elixir of
+                                                        immortality on a supernatural island and delivering it to the shogun. Standing in his way are his
+                                                        fellow convicts and the fearsome beasts that roam the island, devouring or killing anyone they
+                                                        encounter.
+                                    
+                                                        Gabimaru and his companions are confronted with the mysteries of tao, the supernatural phenomenon
+                                                        that turns the beings known as Lord Tensen into fearsome enemies. And when Gabimaru begins acting
+                                                        strangely, is there any hope for his companions, or will they face certain death at his hands?
+                                                    </div>
+                                                </div>
+                                                <a href="product_detail.html" class="detail">Detail</a>
+                                                <!-- <button class="to-cart">Add to cart</button> -->
+                                                
+                                            </div>
+                                            <div class="product-image">
+                                                <img src="img/jigokuraku1.jpg">
+                                            </div>
+                                            <span class="overlay-cost">10.00€</span>
                                 
-                                                    Gabimaru and his companions are confronted with the mysteries of tao, the supernatural phenomenon
-                                                    that turns the beings known as Lord Tensen into fearsome enemies. And when Gabimaru begins acting
-                                                    strangely, is there any hope for his companions, or will they face certain death at his hands?
-                                                </div>
-                                            </div>
-                                            <a href="product_detail.html" class="detail">Detail</a>
-                                            <!-- <button class="to-cart">Add to cart</button> -->
-                                            
-                                        </div>
-                                        <div class="product-image">
-                                            <img src="img/jigokuraku1.jpg">
-                                        </div>
-                                        <span class="overlay-cost">10.00€</span>
-                            
-                            
-                                    </div>
                                 
-                            </div>
-                            <div class="col">
-                                    <div class="product">
-                                        <div class="product-menu">
-                                            <p class="product-title">Oshi no Ko MEMcho (Plain Clothes Ver.) Figure</p>
-                                            <p class="product-author"></p>
-                                            <div class="wrapper">
-                                                <div class="product-desc">
-                                                    Banpresto is proud to introduce a new figure from the smash hit anime series Oshi no Ko: the pop
-                                                    star MEMcho! Dressed in plain clothes, she's ready to start her day
+                                        </div>
+                                    
+                                </div>
+                                <div class="col">
+                                        <div class="product">
+                                            <div class="product-menu">
+                                                <p class="product-title">Oshi no Ko MEMcho (Plain Clothes Ver.) Figure</p>
+                                                <p class="product-author"></p>
+                                                <div class="wrapper">
+                                                    <div class="product-desc">
+                                                        Banpresto is proud to introduce a new figure from the smash hit anime series Oshi no Ko: the pop
+                                                        star MEMcho! Dressed in plain clothes, she's ready to start her day
+                                                    </div>
                                                 </div>
+                                                <a href="product_detail.html" class="detail">Detail</a>
+                                                <!-- <button class="to-cart">Add to cart</button> -->
+                                
                                             </div>
-                                            <a href="product_detail.html" class="detail">Detail</a>
-                                            <!-- <button class="to-cart">Add to cart</button> -->
-                            
+                                            <div class="product-image">
+                                                <img src="img/mem.jpg">
+                                            </div>
+                                            <span class="overlay-cost">26.99€</span>
+                                            <span class="overlay-discount">-10%<br>24,29€</span>
                                         </div>
-                                        <div class="product-image">
-                                            <img src="img/mem.jpg">
-                                        </div>
-                                        <span class="overlay-cost">26.99€</span>
-                                        <span class="overlay-discount">-10%<br>24,29€</span>
-                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div> 
