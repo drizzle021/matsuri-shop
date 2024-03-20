@@ -14,6 +14,23 @@ function changePreviewImage(img){
     document.getElementById("largeProductIMG").src = img.src;
 }
 
+function changePreviewImageHorizontal(img){
+    if (img.classList.contains("active")){
+        return;
+    }
+    const parent = img.parentNode.parentNode.parentNode;
+
+
+    for(const child of parent.children){
+        childImg = child.children[0].children[0];
+        if(childImg.classList.contains("active")){
+            childImg.classList.remove("active");
+        }
+    }
+    img.classList.add("active");
+    document.getElementById("largeProductIMG").src = img.src;
+}
+
 
 // function updateFilterRangeOutput(input_value, output_id){
 //     document.getElementById(output_id).value = input_value; 
