@@ -14,7 +14,7 @@ a{
   color:inherit;
 }
 
-nav{
+nav {
     font-size: larger;
 }
 
@@ -143,6 +143,10 @@ footer img{
     flex-wrap: wrap;
 
 }
+.product *{
+  z-index: 4;
+}
+
 
 .product{
     width: fit-content;
@@ -161,14 +165,13 @@ footer img{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background-color: #FFF;
   }
 .product-image img{
     max-width: 100%;
     max-height: auto;
 
-
-
-    z-index: -1;
+    z-index: 2;
     transition: 0.5s ease-in;
   }
 
@@ -216,6 +219,7 @@ footer img{
 
 .product:has(.overlay-discount) .overlay-cost{
     text-decoration: line-through;
+    text-decoration-thickness: 3px;
   }
 
 .product-menu{
@@ -225,8 +229,7 @@ footer img{
     opacity: 0;
     transition: .5s ease;
     background-color: #FFF;
-
-
+    border-radius: 20px;
   }
 
 .product:hover .product-menu{
@@ -255,6 +258,7 @@ footer img{
     border:none;
     color:#FFF;
     text-align: center;
+    border-radius: 999px;
   }
 .product-menu .to-cart{
     width:40%;
@@ -353,6 +357,9 @@ footer img{
 .small-product-preview img:not(.active){
     opacity: 20%;
   }
+  .small-product-preview-hor img:not(.active){
+    opacity: 20%;
+  }
 
 .product-detail .small-product-preview{
     display: flex;
@@ -360,10 +367,21 @@ footer img{
     max-width: inherit;
     height: 250px;
   }
+.product-detail .small-product-preview-hor{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: inherit;
+}
 .product-detail .small-product-preview img{
     max-width: 100%;
     max-height: auto;
     margin-top: 5px;
+  }
+  .product-detail .small-product-preview-hor img{
+    width: 100px;
+    height: inherit;
   }
 .product-detail .large-product-preview{
     height: 750px;
@@ -415,7 +433,7 @@ footer img{
     justify-content: center;
     cursor: default;
     width: 30%;
-    height: 30%;
+    height: auto;
     font-size: 20px;
     padding: 40px;
     text-align: center;
@@ -989,7 +1007,7 @@ input[type="radio"]:checked {
 
 
 .dashboard-add, .dashboard-edit{
-  height: 500px;
+  height: fit-content;
   margin-top: 10px;
 }
 .dashboard-add select,.dashboard-add input, .dashboard-add textarea{
@@ -1019,11 +1037,15 @@ textarea{
 .category-select{
   width:180px;
   border-radius: 99px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .dashboard{
   padding-top: 250px;
   padding-bottom: 200px;
-  height: 150vh;
+  margin-bottom: 100px;
+  height: 1200px;
   background-image: url("img/quints_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1031,10 +1053,121 @@ textarea{
   background-color: #6d6d6d;
   background-blend-mode: soft-light;
   -webkit-mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
-    mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
+  mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
 
+  }
+.dashboard-search{
+  width: 80px;
+  background-color: transparent;
+  background-image: url("img/search-icon.webp");
+  filter: invert();
+  border:none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
+.product-list{
+  margin-top: 100px;
+  height: fit-content;
+}
+.product-list-product-section{
+  background-color: #212529;
+  padding: 50px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.product-list-filter-section{
+  height: fit-content;
+  color: #FFF;
+  border-radius: 20px;
+  font-family: "Inter", "sans-serif";
+  margin-bottom: 20px;
+
+}
+input[type="range"]{
+  width:80%;
+}
+input[type="number"]{
+  margin-top: 10px;
+  width:50%;
+}
+  
+.product-list-filter-button{
+  width: 80%;
+  min-width: 100px;
+  color: #FFF;
+  background-color: #8C69EF;
+  border-radius: 99px;
+  border: none;
+  font-family: "Inter", "sans-serif";
+  font-weight: bold;
+  padding: 10px;
+}
+.collapse-element{
+  font-family: "Inter", sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+.product-list-search{
+  width: 30px;
+  background-color: transparent;
+  background-image: url("img/search-icon.webp");
+  filter: invert();
+  border:none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.product-list .nav-item{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.product-list input[type="checkbox"]{
+  margin-right: 10px
+}
+
+.page-item{
+  margin-right: 2px;
+  margin-left: 2px;
+}
+.page-link{
+  background-color: #1F1F1F;
+  color: #FFF;
+  border:none
+}
+.page-link:hover{
+  background-color: #8C69EF;
+  color:#FFF;
+}
+.page-link:active{
+  background-color: #8C69EF;
+  color:#FFF;
+}
+.active > .page-link, .page-link.active{
+  background-color: #8C69EF;
+  color:#FFF;
+  border-color: #8C69EF;
+}
+
+.product-list-background{
+  height: fit-content;
+  margin-top: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url("img/quints_background.jpg");
+  background-blend-mode: soft-light;
+  background-color: #c7c7c7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 91%, rgba(255,255,255,0) 100%);
+  mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 91%, rgba(255,255,255,0) 100%);
+}
 
 /* small landscape phone */
 @media (max-width: 767.98px) {
@@ -1095,10 +1228,19 @@ textarea{
         height:96px;
         font-size: x-large;
     }
-    .product-detail .large-product-preview {
-        width: 350px;
-        height: auto;
+
+    .product-detail .large-product-preview{
+      width:350px;
+      height: auto;
+    } 
+
+    .product-list-background{
+      -webkit-mask-image: none;
+      mask-image: none;
     }
+    .category-image{
+      max-width: 350px;
+  }
 
     .account-background{
         height: 1000px;
@@ -1136,9 +1278,6 @@ textarea{
   .product-detail .large-product-preview{
     max-width:500px;
   }
-  .product-detail .small-product-preview{
-    display:none
-  }
   .checkout{
     position: relative;
     left:auto;
@@ -1150,3 +1289,4 @@ textarea{
   }
 
 }
+
