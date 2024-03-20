@@ -1071,7 +1071,12 @@ input[type="number"]{
     .product-detail .large-product-preview{
       width:350px;
       height: auto;
-    }   
+    } 
+
+    .product-list-background{
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
 }
 /* medium, tablet*/
 
