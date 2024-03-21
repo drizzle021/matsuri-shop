@@ -3,3 +3,8 @@ Create a web application - eshop, which comprehensively solves the use cases def
 
 ## Matsuri Shop
 Matsuri Shop is an e-shop that serves customers who are interested in a wide selection of manga, anime figures and other merch.
+
+
+## Creators
+Gabriel Ábrahám; xabraham@stuba.sk
+Ákos Lévárdy; xlevardya@stuba.sk
