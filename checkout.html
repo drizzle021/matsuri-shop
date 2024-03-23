@@ -112,10 +112,6 @@
                                         <input type="text" class="form-control" placeholder="Last name">
                                     </div>
 
-
-                                    <div class="row no-padding no-margin">
-                                        <input type="text" class="form-control" placeholder="Company (optional)">
-                                    </div>
                                     <div class="row no-padding no-margin">
                                         <input type="text" class="form-control" placeholder="Address">
                                     </div>
@@ -160,50 +156,120 @@
 
                         <div class="col-md-6 no-padding no-margin">
                             <h3 class="checkout-heading no-padding"><b>Payment</b></h3>
-                            <div class="form-check">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <input class="form-check-input" type="radio" name="payment" id="debit_card" value="debit_card">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            Debit Card
-                                        </label>
-                                    </div>
+                            <div class="row">
+                                <div class="form-check">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input class="form-check-input" type="radio" name="payment" id="debit_card" value="debit_card">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Debit Card
+                                            </label>
+                                        </div>
 
-<!--                                    <div class="col flex-shrink-1"></div>-->
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="align-items-center col-3 mr-2 px-0">
+                                                    <div class="payment-img">
+                                                        <img class="visa_img" src="img/visa2.png">
+                                                    </div>
+                                                </div>
 
-                                    <div class="offset-3 col-1">
-                                        <img class="visa_img" src="img/visa2.png">
-                                    </div>
-                                    <div class="col-1">
-                                        <img class="master_card_img" src="img/master_card.png">
+                                                <div class="align-items-center col-3 px-2 mx-2">
+                                                    <div class="payment-img">
+                                                        <img class="master_card_img" src="img/master_card.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
 
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="payment" id="paypal" value="paypal">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    PayPal
-                                </label>
+                            <div class="row">
+                                <div class="form-check">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input class="form-check-input" type="radio" name="payment" id="paypal" value="paypal">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                PayPal
+                                            </label>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="align-items-center col-3 px-0">
+                                                    <div class="payment-img">
+                                                        <img class="pay-pal-img" src="img/paypall.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="payment" id="tatrapay" value="tatrapay">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    TatraPay
-                                </label>
+
+                            <div class="row">
+                                <div class="form-check">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input class="form-check-input" type="radio" name="payment" id="tatrapay" value="tatrapay">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                TatraPay
+                                            </label>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="align-items-center col-3 px-0">
+                                                    <div class="payment-img">
+                                                        <img class="tatra-pay-img" src="img/tatra_banka.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="payment" id="bank_transfer" value="bank_transfer">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Bank transfer
-                                </label>
+
+                            <div class="row">
+                                <div class="form-check">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input class="form-check-input" type="radio" name="payment" id="bank_transfer" value="bank_transfer">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Bank transfer
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="form-check matsuri-points-check mt-5">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input class="form-check-input" type="checkbox" name="points" id="matsuri_points" value="matsuri_points">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Use Matsuri points (1234)
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
                             </div>
 
 
                             <div class="row mb-5">
                                 <div class="row d-flex justify-content-center">
+                                    <a href="index.html">
                                     <button type="submit" class="pay-now-button btn-primary btn-block">Pay now</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -229,9 +295,9 @@
                 <div class="col-12 col-md-2">
                     <ul>
                         <li>Products</li>
-                        <li><a href="#">Best-Sellers</a></li>
-                        <li><a href="#">Manga</a></li>
-                        <li><a href="#">Figures</a></li>
+                        <li><a href="product_list.html">Best-Sellers</a></li>
+                        <li><a href="product_list.html">Manga</a></li>
+                        <li><a href="product_list.html">Figures</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-2">
