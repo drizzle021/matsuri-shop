@@ -795,8 +795,8 @@ h2{
 
 .form-label{
     color: #9C9C9C;
-    max-width: 100px;
-    padding-right: 100px;
+    /*max-width: 100px;*/
+    /*padding-right: 100px;*/
 }
 
 .form-control{
@@ -816,7 +816,7 @@ h2{
 }
 
 .register-background{
-    background-image: url('img/collage_wallpaper_2.png');
+    background-image: url('img/collage_wallpaper_2.jpg');
     background-size: cover;
     background-position: center;
     /*filter: brightness(10%);*/
@@ -826,7 +826,7 @@ h2{
 }
 
 .account-background{
-    background-image: url('img/collage_wallpaper_2.png');
+    background-image: url('img/collage_wallpaper_2.jpg');
     background-size: cover;
     background-position: center;
     /*filter: brightness(10%);*/
@@ -836,7 +836,7 @@ h2{
 }
 
 .payment-background{
-    background-image: url('img/collage_wallpaper_2.png');
+    background-image: url('img/collage_wallpaper_2.jpg');
     background-size: cover;
     background-position: center;
     /*filter: brightness(10%);*/
@@ -851,6 +851,16 @@ h2{
     margin-top: 20vh;
     height: 100vh;
     margin-bottom: 20px;
+}
+
+.matsuri-points{
+    color: #8C69EF;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.matsuri-points-check{
+    margin-top: 30px;
 }
 
 .account-box{
@@ -921,7 +931,7 @@ h2{
     min-width: 200px;
     border: none;
     border-radius: 10px;
-    bottom: -450px;
+    bottom: -280px;
 }
 
 .your-account-text{
@@ -967,10 +977,11 @@ h2{
     color: #000000;
     background-color: #ffffff;
     max-width: 80%;
-    height: 40px;
+    height: fit-content;
     border-radius: 6px;
     margin-top: 5px;
     padding-left: 35px;
+    padding-bottom: 10px;
 }
 
 .form-check-label{
@@ -988,18 +999,36 @@ input[type="radio"]:checked {
 }
 
 .visa_img{
-    height: 40px;
-    width: 60px;
+    max-height: auto;
+    max-width: 100%;
     /*padding-left: 520px;*/
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 
 .master_card_img{
-    height: 40px;
-    width: 60px;
+    max-height: auto;
+    max-width: 100%;
     /*padding-left: 550px;*/
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
+
+.pay-pal-img{
+    max-height: auto;
+    max-width: 100%;
+}
+
+.tatra-pay-img{
+    max-height: auto;
+    max-width: 80%;
+}
+
+.payment-img{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
 
 #account-form{
     border-radius: 5px;
@@ -1208,6 +1237,8 @@ input[type="number"]{
     .pay-now-button{
         bottom: -45px;
     }
+
+
 }
 /* small portrait phone*/
 @media (max-width: 575.98px) {
