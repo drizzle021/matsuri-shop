@@ -402,9 +402,15 @@ footer img{
 .product-detail .product-author{
     font-family: "Inter", sans-serif;
     font-size: x-large;
+    font-weight: bold;
+    color: #a0a0a0;
+  }
+.product-detail .product-id{
+  font-family: "Inter", sans-serif;
+    font-size: large;
     color: #757575;
     margin-bottom: 100px;
-  }
+}
   .product-detail .product-status{
     display:inline-flex;
     width: fit-content;
@@ -1050,10 +1056,10 @@ textarea{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #6d6d6d;
+  background-color: #a3a3a3;
   background-blend-mode: soft-light;
-  -webkit-mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
-  mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 82%, rgba(255,255,255,0) 100%);
+  -webkit-mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 91%, rgba(255,255,255,0) 100%);
+  mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 91%, rgba(255,255,255,0) 100%);
 
   }
 .dashboard-search{
