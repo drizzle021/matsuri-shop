@@ -260,6 +260,20 @@ footer img{
     text-align: center;
     border-radius: 999px;
   }
+.product-menu .edit-product-button{
+    width:30%;
+    padding: 5px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    background-color: #1E1E1E;
+    border:none;
+    color:#FFF;
+    text-align: center;
+    border-radius: 999px;
+}
+
 .product-menu .to-cart{
     width:40%;
     font-size: 20px;
@@ -1066,11 +1080,18 @@ input[type="radio"]:checked {
   font-weight: bold;
   font-size: xx-large;
 }
-textarea{
+.dashboard textarea{
   resize: none;
 }
 .category-select{
-  width:180px;
+  width:200px;
+  border-radius: 99px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.modal-content .category-select{
+  width:300px;
   border-radius: 99px;
   border: none;
   padding-top: 5px;
@@ -1131,6 +1152,33 @@ input[type="number"]{
   width:50%;
 }
   
+.add-product-button{
+  width: 80%;
+  min-width: 100px;
+  color: #FFF;
+  background-color: #8C69EF;
+  border-radius: 99px;
+  border: none;
+  font-family: "Inter", "sans-serif";
+  font-weight: bold;
+  padding: 10px;
+}
+#addProductModal, #editProductModal{
+  font-family: "Inter", "sans-serif";
+}
+#addProductModal .modal-content ,#editProductModal .modal-content{
+  background-color: #212529;
+}
+#addProductModal .btn-primary, #editProductModal .btn-primary{
+  background-color:#8C69EF;
+  border-color: #8C69EF;
+}
+
+.modal-title{
+  color: #FFF;
+  font-weight: bold;
+}
+
 .product-list-filter-button{
   width: 80%;
   min-width: 100px;
@@ -1265,6 +1313,11 @@ input[type="number"]{
         width: 280px;
         height:96px;
         font-size: x-large;
+    }
+
+    .product-image{
+      width: 220px;
+      height:300px;
     }
 
     .product-detail .large-product-preview{

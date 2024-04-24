@@ -79,14 +79,194 @@
 
     
 
-</header> 
+</header>
+
+<!-- Add Product Modal -->
+<div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addProductModalLabel">Add Product</h5>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="add-product-category" class="form-label">Category:</label>
+                  <select name="category-select" class="category-select" id="add-product-category" autocomplete="off">
+                    <option>Manga</option>
+                    <option>Figures</option>
+                    <option>Box Set</option>
+                    <option>Scale 1/8</option>
+                    <option>Scale 1/7</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="add-product-series" class="form-label">Anime/Manga series:</label>
+                    <select name="series-select" class="category-select" id="add-product-series" autocomplete="off">
+                        <option>The Quintessential Quintuplets</option>
+                        <option>Hell's Paradise</option>
+                        <option>Nisekoi</option>
+                        <option>Oshi no ko</option>
+                        <option>Attack on Titan</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                    <label for="add-product-product-title" class="form-label">Product Title:</label>
+                    <input type="text" class="form-control" id="add-product-product-title">
+                  </div>
+                  <div class="form-group">
+                    <label for="add-product-author" class="form-label">Author (optional):</label>
+                    <input type="text" class="form-control" id="add-product-author">
+                  </div>
+                  <div class="form-group">
+                    <label for="add-product-pages" class="form-label">Pages (optional):</label>
+                    <input type="number" class="form-control" id="add-product-pages" min="0" value="0">
+                  </div>
+                  <div class="form-group">
+                    <label for="add-product-publisher" class="form-label">Publisher:</label>
+                    <input type="text" class="form-control" id="add-product-publisher">
+                  </div>
+                  <div class="form-group">
+                    <label for="add-product-dimensions" class="form-label">Dimensions:</label>
+                    <input type="text" class="form-control" id="add-product-dimensions">
+                  </div>
+                  <div class="form-group">
+                    <label for="add-product-price" class="form-label">Price:</label>
+                    <input type="number" class="form-control" id="add-product-price" min="1" max="5000" step="0.01" value="20" >
+                  </div>
+                  <div class="form-group">
+                    <label for="add-product-discount" class="form-label">Discount:</label>
+                    <input type="number" class="form-control" id="add-product-discount" min="0" max="1" step="0.01" value="0">
+                  </div>
+                  <div class="form-group">
+                    <label for="add-product-description" class="form-label">Description:</label>
+                    <textarea class="form-control" id="add-product-description"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="add-product-main-picture" class="form-label">Main image:</label>
+                    <input type="file" class="form-control" id="add-product-main-picture">
+                  </div>
+                  <div class="form-group">
+                    <label for="add-product-side-picture1" class="form-label">Side image 1:</label>
+                    <input type="file" class="form-control" id="add-product-side-picture1">
+                  </div>
+                  <div class="form-group">
+                    <label for="add-product-side-picture2" class="form-label">Side image 2:</label>
+                    <input type="file" class="form-control" id="add-product-side-picture2">
+                  </div>
+                
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Add</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Edit Product Modal -->
+  <div class="modal fade" id="editProductModal" tabindex="-1" role="dialog" aria-labelledby="editProductModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editProductModalLabel">Edit Product</h5>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="edit-product-category" class="form-label">Category:</label>
+                  <select name="category-select" class="category-select" id="edit-product-category" autocomplete="off">
+                    <option>Manga</option>
+                    <option>Figures</option>
+                    <option>Box Set</option>
+                    <option>Scale 1/8</option>
+                    <option>Scale 1/7</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="edit-product-series" class="form-label">Anime/Manga series:</label>
+                    <select name="series-select" class="category-select" id="edit-product-series" autocomplete="off">
+                        <option>The Quintessential Quintuplets</option>
+                        <option>Hell's Paradise</option>
+                        <option>Nisekoi</option>
+                        <option>Oshi no ko</option>
+                        <option>Attack on Titan</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                    <label for="edit-product-product-title" class="form-label">Product Title:</label>
+                    <input type="text" class="form-control" id="edit-product-product-title">
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-product-author" class="form-label">Author (optional):</label>
+                    <input type="text" class="form-control" id="edit-product-author">
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-product-pages" class="form-label">Pages (optional):</label>
+                    <input type="number" class="form-control" id="edit-product-pages" min="0" value="0">
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-product-publisher" class="form-label">Publisher:</label>
+                    <input type="text" class="form-control" id="edit-product-publisher">
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-product-dimensions" class="form-label">Dimensions:</label>
+                    <input type="text" class="form-control" id="edit-product-dimensions">
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-product-price" class="form-label">Price:</label>
+                    <input type="number" class="form-control" id="edit-product-price" min="1" max="5000" step="0.01" value="20" >
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-product-discount" class="form-label">Discount:</label>
+                    <input type="number" class="form-control" id="edit-product-discount" min="0" max="1" step="0.01" value="0">
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-product-description" class="form-label">Description:</label>
+                    <textarea class="form-control" id="edit-product-description"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-product-main-picture" class="form-label">Main image:</label>
+                    <input type="file" class="form-control" id="edit-product-main-picture">
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-product-side-picture1" class="form-label">Side image 1:</label>
+                    <input type="file" class="form-control" id="edit-product-side-picture1">
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-product-side-picture2" class="form-label">Side image 2:</label>
+                    <input type="file" class="form-control" id="edit-product-side-picture2">
+                  </div>
+                
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Update</button>
+          <button type="button" class="btn btn-primary">Delete</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 <div class="product-list-background">
     <div class="product-list">
         <div class="container">
+            <div class="col-10 col-md-10 col-lg-3">
+                <div class="row my-2">
+                    <div class="d-flex justify-content-center col px-0 px-md-3 px-lg-4">
+                        <button class="add-product-button" type="button" data-toggle="modal" data-target="#addProductModal">ADD PRODUCT</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container">
             <div class="row justify-content-center">
-                <div class="d-flex col-10 col-md-3 justify-content-center px-0 px-md-5">
+                <div class="d-flex col-10 col-md-10 col-lg-3 justify-content-center px-0 px-md-3 px-lg-4 mx-lg-1">
                         <div class="container-fluid bg-dark product-list-filter-section p-4">
                             <form method="GET" id="filter">
                                 <div class="row pb-5 mb-4">
@@ -217,7 +397,16 @@
                                                             strangely, is there any hope for his companions, or will they face certain death at his hands?
                                                         </div>
                                                     </div>
-                                                    <a href="product_detail.html" class="detail">Detail</a>
+                                                    <div class="row">
+                                                        <div class="col-5">
+                                                            <a href="product_detail.html" class="detail">Detail</a>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <button class="edit-product-button" type="button" data-toggle="modal" data-target="#editProductModal">Edit</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
                                                     <!-- <button class="to-cart">Add to cart</button> -->
                                     
                                                 </div>
